@@ -77,13 +77,22 @@ Use Cases
    - Сущности (`Animal`, `Enclosure`, `FeedingSchedule`, и т.д.)
    - Value Objects (`AnimalType`, `FoodType`, и т.д.)
    - Доменные события (`AnimalMovedEvent`, `FeedingTimeEvent`)
+
+
    1.2. Application - бизнес-логика:
    - Сервисы (`AnimalService`, `FeedingOrganizationService`, и т.д.)
    - Интерфейсы репозиториев (`IAnimalRepository`, `IEnclosureRepository`, и т.д.)
    - Обработчики событий (`AnimalMovedEventHandler`, `FeedingTimeEventHandler`)
+
+
+
    1.3. Infrastructure - техническая реализация:
    - In-memory репозитории
    - Фоновые сервисы (`FeedingBackgroundService`)
+
+
+
+
    1.4. Presentation (ZooWebApi) - интерфейс взаимодействия:
    - REST API контроллеры
    - DTO-объекты
@@ -92,16 +101,23 @@ Use Cases
    
    2.1. Репозитории определены через интерфейсы в Application-слое:
    - IAnimalRepository, IEnclosureRepository, и т.д.
+
+
+
    2.2. Реализация репозиториев в Infrastructure-слое:
    - InMemoryAnimalRepository, InMemoryEnclosureRepository, и т.д.
+
+
+
+
    2.3. Внедрение зависимостей через конструкторы сервисов и контроллеров
 
-4. Изоляция бизнес-логики
+3. Изоляция бизнес-логики
    - Доменная логика полностью инкапсулирована в Domain-слое
    - Правила применения бизнес-операций находятся в Application-слое
    - Presentation-слой содержит только логику маппинга DTO и HTTP-ответов
    - Реализация Infrastructure-слоя не влияет на бизнес-логику
-5. Механизм событий
+4. Механизм событий
    - Фоновый сервис `FeedingBackgroundService` для проверки расписания кормлений
    - Обработчики доменных событий в Application-слое
    - Диспетчер событий для распределения событий по обработчикам
