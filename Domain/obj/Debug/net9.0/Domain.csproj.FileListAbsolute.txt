@@ -10,3 +10,4 @@ C:\SoftwareConstruction\HSE_ZooManagementSystem\Domain\obj\Debug\net9.0\Domain.d
 C:\SoftwareConstruction\HSE_ZooManagementSystem\Domain\obj\Debug\net9.0\refint\Domain.dll
 C:\SoftwareConstruction\HSE_ZooManagementSystem\Domain\obj\Debug\net9.0\Domain.pdb
 C:\SoftwareConstruction\HSE_ZooManagementSystem\Domain\obj\Debug\net9.0\ref\Domain.dll
+C:\SoftwareConstruction\HSE_ZooManagementSystem\Domain\obj\Debug\net9.0\Domain.sourcelink.json
