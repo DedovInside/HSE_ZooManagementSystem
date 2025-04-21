@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "JTvx75yLFtDoSXpL2VYIiqMJUz+MJXEyixV9FXUmfTc=",
+  "Source": "ZooWebApi",
+  "BasePath": "_content/ZooWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
