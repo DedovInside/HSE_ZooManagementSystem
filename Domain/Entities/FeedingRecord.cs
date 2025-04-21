@@ -20,7 +20,7 @@ namespace Domain.Entities
                 ScheduleId = schedule.Id,
                 AnimalId = schedule.AnimalId,
                 Food = schedule.Food,
-                CompletedAt = DateTime.UtcNow
+                CompletedAt = DateTime.Now
             };
         }
     }
